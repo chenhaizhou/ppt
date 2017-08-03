@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1><img src="images/html5.png" style="max-height: 160px;border:0;box-shadow: none;background-color:transparent"></h1>
+                <h3>HyperText Markup Language</h3>
+                <p>
+                    <small>Created by <a href="http://chenhaizhou.github.io">Haizhou Chen</a></small>
+                </p>
+            </section>
+            <section>
+                <img src="images/f1.jpg" alt="" style="max-height: 600px;">
+            </section>
+            <section>
+                <section>
+                    <h2>Phrase</h2>
+                </section>
+                <section>
+                    <h2>Backbone</h2>
+                    <pre class="fragment roll-in"><code class="html">&lt;!doctype html>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name="" content="" /&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/all.css" /&gt;
+    &lt;style&gt;
+      h1 {color: #333;}
+    &lt;/style&gt;
+    &lt;script src="js/all.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello Word!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </section>
+                <section>
+                    <h3>Base</h3>
+                    <div class="fragment roll-in" style="text-align:left">
+                        <h4 style="text-align:center">Attribute</h4>
+                        <li>id, class, title, style, data-*</li>
+                        <li>alt, name, type, value</li>
+                    </div>
+                </section>
+                <section>
+                    <h3>Nested Rules</h3>
+                    <div class="fragment">
+                        <h4>Tags Type</h4>
+                        <ul>
+                            <li>replaced element, non-replaced element</li>
+                            <li>flow, heading, sectioning, phrasing, embedded, interactive, metadata</li>
+                            <li>block element, inline element</li>
+                        </ul>
+                    </div>
+                </section>
+                <!--
+                <section data-transition="slide" data-background="#ffffff" data-background-transition="zoom">
+                    <a href="https://www.w3.org/TR/html5/dom.html#kinds-of-content" target="_blank"><img src="images/embed2.png" style="max-height:600px;margin:0;padding:0;border:0;box-shadow:none;" alt=""></a>
+				</section>
+				-->
+                <section data-transition="slide" data-background="#ffffff" data-background-transition="convex">
+                    <object data="https://www.w3.org/TR/html5/images/content-venn.svg" height="288" width="1000"><img alt="" height="288" src="https://www.w3.org/TR/html5/images/content-venn.png" width="512"></object>
+                </section>
+                <section>
+                    <h3>Strict Rules</h3>
+                    <ul>
+                        <li>ol, ul, li, dl, dt, dd, table, tr, th, td</li>
+                        <li>a not contain interactive element</li>
+                        <li>p not block element</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Semantic</h2>
+                </section>
+                <section>
+                    <h3>Semantic Network</h3>
+                </section>
+                <section>
+                    <h3>Semantic Tags</h3>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>How to write?</h2>
+                </section>
+                <section>
+                    <h3>Structural</h3>
+                </section>
+                <section>
+                    <h3>Concise</h3>
+                </section>
+                <section>
+                    <h3>Flexibility</h3>
+                </section>
+            </section>
+            <section>
+                <h2>Vilidate</h2>
+                <p class="fragment"><a href="http://jigsaw.w3.org/css-validator/" target="_blank">http://jigsaw.w3.org/css-validator/</a></p>
+            </section>
+            <section>
+                <img src="images/f2.jpg" alt="" style="max-height: 600px;">
+            </section>
+            <section style="text-align: left;">
+                <h2>Q & A</h2>
+                <p>
+                    - <a href="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5</a>
+                    <br /> - <a href="http://www.w3schools.com">W3 School</a>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+</body>
+
+</html>
