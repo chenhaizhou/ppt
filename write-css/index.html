@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style>
+        .reveal .slides .img {
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1><img src="images/css3.png" style="max-height: 160px;border:0;box-shadow: none;background-color:transparent"></h1>
+                <h3>Cascading Style Sheets</h3>
+                <p>
+                    <small>Created by <a href="http://chenhaizhou.github.io">Haizhou Chen</a></small>
+                </p>
+            </section>
+            <section>
+                <img src="images/f1.jpg" alt="" style="max-height: 600px;">
+            </section>
+            <section>
+                <section data-background-color="#FFFFFF">
+                    <h2>Browser</h2>
+                    <img src="images/browser2.png" class="img" alt="">
+                    <img src="images/browser3.png" class="fragment img" style="margin-left: -20px;" alt="">
+                </section>
+                <section>
+                    <img src="images/webkitflow.png" class="img" alt="">
+                </section>
+            </section>
+            <section>            
+                <section data-background="#7BAEDD">
+                    <h3>Specificity</h3>
+                    <img src="images/CSS-Specificity-Formula.png" class="img" alt="">
+                </section>
+                <section data-background="#FFFFFF">
+                    <img src="images/specifishity1-1.png" class="img" alt="">
+                </section>
+            </section>
+            <section>
+                <section data-background-color="#FFF">
+                    <h3>Box model</h3>
+                    <img src="images/h1.jpg" class="img fragment" style="width: 45%" alt="">
+                    <img src="images/h2.jpg" class="img fragment" style="width: 45%; vertical-align: top;" alt="">
+                </section>
+                <section data-background-color="#b43431">
+                    <img src="images/kfc.png" class="img" style="margin-left: -200px;vertical-align: middle;" width="300" alt="">
+                    <ul style="display: inline-block;vertical-align: middle;">
+                        <li class="fragment">BFC</li>
+                        <li class="fragment">IFC</li>
+                        <li class="fragment">FFC</li>
+                        <li class="fragment">GFC</li>
+                    </ul>
+                </section>
+                <section data-background-color="#FFF">
+                    <h2>SC</h2>
+                    <img src="images/stacking.png" class="img fragment" alt="">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>How to write?</h2>
+                </section>
+                <section>
+                    <h3>ThoughtWork</h3>
+                </section>
+                <section>
+                    <h3>Solution</h3>
+                    
+                </section>
+                <section>
+                    <h3>Progressive Enhancement, Graceful Degradation</h3>
+                    <div class="fragment">
+                        <pre style="display:inline-block; width: 40%">
+.transition {
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
+}
+                            </pre>
+                            <pre style="display:inline-block; width: 40%;margin-left: 40px;">
+.transition {
+          transition: all .5s;
+       -o-transition: all .5s;
+     -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+}
+                            </pre>
+                    </div>
+                </section>
+                <section>
+                    <h3>Mobile first, Desktop first</h3>
+                    <pre class="fragment">min-width, max-width</pre>
+                </section>
+                <section>
+                    <h3>Structural</h3>
+                </section>
+                <section>
+                    <h3>Concise</h3>
+                </section>
+                <section>
+                    <h4>Extend</h4>
+                    <p class="fragment">inherit</p>
+                </section>
+                <section>
+                    <h4>Pseudo Class</h4>
+                    <ul>
+                        <li>:link,:visited:hover,:active</li>
+                        <li>:first-child, last-child, nth-child(n), nth-of-type(n)</li>
+                        <li>:not, :empty</li>
+                        <li>:focue, :checked, :enabled, :disabled</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>PSEUDO ELEMENTS</h4>
+                    <ul>
+                        <li class="fragment highlight-green">::before</li>
+                        <li class="fragment highlight-green">::after</li>
+                        <li>::first-letter</li>
+                        <li>::first-line</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Flexibility</h3>
+                    <ul>
+                        <li class="fragment">Use %,rem..., (inhert, unset)</li>
+                        <li class="fragment">Different(Browsers, Screens, Devices)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Performance</h3>
+                    <p class="fragment">Write order</p>
+                    <p>reflow, repaint</p>
+                </section>
+            </section>
+            <section>
+                <h2>Vilidate</h2>
+                <p class="fragment"><a href="http://jigsaw.w3.org/css-validator/" target="_blank">http://jigsaw.w3.org/css-validator/</a></p>
+            </section>
+            <section>
+                <section data-background-color="#272727">
+                    <img src="images/web1.png" class="img" alt="">
+                </section>
+                <section data-background-color="#272727">
+                    <img src="images/web2.png" class="img" alt="">
+                </section>
+                <section data-background-color="#272727">
+                    <img src="images/web3.png" class="img" alt="">
+                </section>
+            </section>
+            <section>
+                <img src="images/f3.png" alt="" style="max-height: 600px;">
+            </section>
+            <section style="text-align: left;">
+                <h2>Q & A</h2>
+                <p>
+                    - <a href="http://www.w3.org/TR/css/">http://www.w3.org/TR/css</a><br />
+                    - <a href="http://www.w3.org/TR/css2/">http://www.w3.org/TR/css2</a><br />
+                    - <a href="http://www.caniuse.com">Can I Use</a>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+</body>
+
+</html>
